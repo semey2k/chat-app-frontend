@@ -95,7 +95,7 @@ export default function Chat() {
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
                     <div className="title-box">
-                      <p className="d-flex w-50 mb-0">{message.created}</p>
+                      <p className="created d-flex w-50 mb-0">{message.created}</p>
                       <p className="fw-bold mb-0">{message.fromUser}</p>
                     </div>
                     <div className="mail-text">
@@ -130,6 +130,10 @@ export default function Chat() {
 }
 
 const Container = styled.div`
+.created{
+  font-size: 0.8vw;
+  padding-right: 10px;
+}
   .accordion-body {
     display: flex;
     align-items: center;
